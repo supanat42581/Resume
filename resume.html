@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e20b5b088a.js" crossorigin="anonymous"></script>
+    <script>
+        
+        function nightmode() {
+            document.getElementsByClassName("container")[0].style.backgroundColor="black";
+            document.getElementsByClassName("name")[0].style.color="white";
+            document.getElementsByClassName("detail")[0].style.color="white";
+            document.getElementsByClassName("contact")[0].style.backgroundColor="#287285";
+            document.getElementsByClassName("head")[0].style.color="black";
+            document.getElementsByClassName("skill")[0].style.backgroundColor="#287285";
+            document.getElementsByClassName("software")[0].style.backgroundColor="#287285";
+            document.getElementsByClassName("button")[0].style.display="none"; 
+            document.getElementsByClassName("button2")[0].style.display="block";  
+            document.getElementsByClassName("personal")[0].style.backgroundColor="rgba(87, 73, 70 ,0.5)";
+            document.getElementsByClassName("education")[0].style.backgroundColor="#287285";
+            document.getElementsByClassName("workexp")[0].style.backgroundColor="#287285";
+            document.getElementsByClassName("subhead")[0].style.color="white";
+            document.getElementsByClassName("subwork")[0].style.color="white";
+            document.getElementsByClassName("software")[0].style.color="white";
+            document.getElementsByClassName("skill")[0].style.color="white";
+            document.getElementsByClassName("infor")[0,1,2,3,4,5,6,7].style.color="white";
+
+            
+        }
+        function daymode() {
+            document.getElementsByClassName("container")[0].style.backgroundColor="beige";
+            document.getElementsByClassName("contact")[0].style.backgroundColor="#38DAE6";
+            document.getElementsByClassName("skill")[0].style.backgroundColor="#38DAE6";
+            document.getElementsByClassName("software")[0].style.backgroundColor="#38DAE6";
+            document.getElementsByClassName("button")[0].style.display="block"; 
+            document.getElementsByClassName("button2")[0].style.display="none";
+            document.getElementsByClassName("name")[0].style.color="black";
+            document.getElementsByClassName("detail")[0].style.color="black"; 
+            document.getElementsByClassName("personal")[0].style.backgroundColor="coral";
+            document.getElementsByClassName("subhead")[0].style.color="black";
+            document.getElementsByClassName("subwork")[0].style.color="black";
+            document.getElementsByClassName("infor")[0,1,2,3,4,5,6,7].style.color="black";
+            document.getElementsByClassName("head")[0].style.color="black";
+        }
+    </script>
+    
+    
+    
+    <style>
+        .exp{
+            display: flex;
+            justify-content: space-around;
+        }
+        .button{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        .button2{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            display: none;
+        }
+        *{
+            margin: 0px;
+            margin-left: 1px;
+            padding: 0px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width: 98vw;
+            height: 100%;
+            background-color: beige
+        }
+        .header{
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            column-gap: 10px;
+            align-items: center;
+        }
+      
+        .personal{
+            background-color: coral;
+            border-radius: 5px;
+            margin-top: 10px;
+            padding: 10px;
+            color: black;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+            column-gap: 10px;
+            margin-top: 10px;
+        }
+        .left{
+            grid-column: 1/2;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            row-gap: 5px;
+            width: 100%;
+ 
+        }
+        .contact{
+            display: grid;
+            background-color: #38DAE6;
+            grid-template-rows: repeat(3, auto);
+            gap: 5px;
+            align-items: center;
+            width: 100%;
+            border-radius: 10px;
+            justify-content: center;
+            padding: 0%;
+        }
+        .item1{
+            background-color: gainsboro;
+            width: 350px;
+            border-radius: 5px;
+            padding: 0%;
+        }
+        .skill{
+            align-items: center;
+            display: grid;
+            background-color: #38DAE6;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .software{
+            align-items: center;
+            display: grid;
+            background-color: #38DAE6;
+            border-style: solid, black, 2px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .right{
+            
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 100%;
+        }
+        .careerobjective{
+            grid-row: 1/2;
+            width: 100%;
+            background-color: gainsboro;
+        }
+        .workexp2{
+            grid-row: 2/3;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            background-color: gainsboro;
+
+        }
+        .workexp{
+            grid-row: 2/4;
+            display: grid;
+            align-items: center;
+            width: 100%;
+            background-color: gainsboro;
+        }
+        .head{
+            font-size: 30px;
+            background-color: rgba(44,141,156,0.3);
+            text-align: center;
+            border-radius: 10px;
+            width: 95%;
+            text-align: center;
+            margin: auto;
+        }
+        .infor{
+            display: grid;
+            align-items: center;
+        }
+        .name{
+            font-size: 40px;
+            text-align: center;
+        }
+        .detail{
+            display: grid;
+            align-items: center;
+            font-size: 20px;
+        }
+        .subhead{
+            display: grid;
+            align-items: center;
+            height: 60px;
+            font-size: 18px;
+        }
+        .subwork{
+            display: grid;
+            align-items: center;
+        }
+        .image{
+            width: 50%; 
+            height: 50%; 
+            border-radius: 50%;
+            display: block;
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media only screen and (max-width: 648px){ 
+	    .header {grid-template-columns: 100%;}
+        .content{grid-template-columns: 100%;
+                 font-size: 20px;
+
+        }
+        
+        }
+
+        @media only screen and (max-width: 800px) and (min-width: 649px){ 
+        .header {grid-template-columns: 100%; }
+        .content{font-size: 16px;}
+        .head{font-size: 20px;}
+        }
+    
+        @media only screen and (min-width: 800px){ 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class=header>
+            <div class="profile">
+                <img class="image" src="me.jpg" alt="" >
+            </div>
+            <div class="personal">
+                <div class="name">Mr. SUPANAT THANARUNGRUEANGKIJ</div>
+                <div class="detail">
+                    <div>Sex : Male</div>
+                    <div>Birthdate : 2 Octorber 1997</div>
+                    <div> 
+                        <p>Ethnicity : Thai</p> 
+                        <span>Nationality : Thai</span>
+                    </div>
+                    <div>Chronic Disease : - </div>
+                    <div>Start Date : Ready to start</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="contact">
+                    <div class="head">Contact</div>
+                    <div class="item1">
+                        &nbsp&nbsp<i class="fas fa-envelope"></i>
+                        <span> &nbsp&nbspsupanat42581@gmail.com</span>
+                    </div>
+                    <div class="item1">
+                        &nbsp&nbsp<i class="fas fa-phone-alt"></i>
+                        <span class="item1"> &nbsp&nbsp0805561546</span>
+                    </div>
+                    <div class="item1">
+                        &nbsp&nbsp<i class="fas fa-map-marker-alt"></i>
+                        <span class="item1">&nbsp&nbsp 66 Soi Chaiyaphoom, Shong wat Road,<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspChakkaphat, Samphanthawong, <br> 
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBangkok, 10100
+                    </span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="head">Skill</div>
+                    <ul>
+                        <li>&nbsp&nbsp Good Relationship</li>
+                        <li>&nbsp&nbsp Energetic</li>
+                        <li>&nbsp&nbsp English</li>
+                        <li>&nbsp&nbsp Good Team Player</li>
+                        <li>&nbsp&nbsp Ready To Learn</li>
+                    </ul>
+                </div>
+                <div class="software">
+                    <div class="head">Software</div>
+                    <ul>
+                        <li>&nbsp&nbsp HTML</li>
+                        <li>&nbsp&nbsp CSS</li>
+                        <li>&nbsp&nbsp JAVA SCRIPT</li>
+                        <li>&nbsp&nbsp Photoshop</li>
+                        <li>&nbsp&nbsp Excel</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="careerobjective">
+                    <div class="head">Career Objective</div>
+                    <div class="subhead">Obtain a position relating to Full-Stack Developer and Bussiness Analyse</div>
+                
+                <div class="workexp2">
+                    <div class="head">Workexperience</div>
+                    <div class="subwork">
+                        <div class="infor">
+                            <br>
+                            <br>
+                            <br>
+                            <span><i class="fas fa-play"></i> 2010 - 2016 Debsirin School <br> &nbsp&nbsp&nbsp&nbsp Art-Math Program Gpax 3.87
+                            </span>
+                        </div>
+                        <br>
+                        <div class="infor">
+                            <span><i class="fas fa-play"></i> 2016 - 2020 Chulalongkorn University <br>&nbsp&nbsp&nbsp Graduated with first-class honors
+                                Faculty of Education major of Business Education</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="workexp">
+                    <div class="head">Workexperience</div>
+                    <div class="subwork">
+                        <div class="infor">
+                            <span><i class="fas fa-play"></i> Staff Chulalongkorn University expo2017 <br>&nbsp&nbsp&nbsp Coordinating between presenters and scheduling Support
+                            </span>
+                        </div>
+                        <br>
+                        <div class="infor">
+                            <span><i class="fas fa-play"></i> Financial Department Internship at Faculty of Education   
+                                <br>&nbsp&nbsp&nbsp        Analyse and save data in the system
+                            </span>
+                        </div>
+                        <br>
+                        <div class="infor">
+                            <span><i class="fas fa-play"></i> HR Training  Internship at Marriott Marquis Queen Parks <br>&nbsp&nbsp&nbsp        
+                                Training Staff , Organize Event and improve          
+                                Efficiency of Each Department 
+                            </span>
+                        </div>
+                        <br>
+                        <div class="infor">
+                            <span><i class="fas fa-play"></i> The winner of GSB Start-Up   <br>&nbsp&nbsp&nbsp          invent the innovation solution for 
+                                start-up  name "Myin"  (application for calculate    
+                                salary, save money and investment   
+                            </span>
+                        </div>
+                        <br>
+                        <div class="infor">
+                            <span><i class="fas fa-play"></i> Student teacher At Kularbwitthaya School and BBC College <br>&nbsp&nbsp&nbsp        Teaching Accounting subject for basic business
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <br>
+        <div class="button">
+            <button onclick="nightmode()">
+                Dark Mode!!!
+            </button>
+        </div>
+        <div class="button2">
+            <button onclick="daymode()">
+                Normal !!!
+            </button>
+        </div>   
+        </div>
+    </container> 
+</body>
+</html>
